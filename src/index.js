@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import Scroll from './Scroll';
+// import Tab from './Tabs';
+import {Panel,PanelHead,PanelMain,PanelFoot} from './Panel'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  // <Scroll>
+  //   <Tab
+  //     tabs = {[
+  //       {title:'张三'},
+  //       {title:'李四'}
+  //     ]}
+  //   />
+  // </Scroll>,
+  <Panel>
+    <PanelHead />
+  </Panel>,
+  document.getElementById('root')
+)
